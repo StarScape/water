@@ -1,0 +1,13 @@
+{
+  "name": "water",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "cljs-test": "shadow-cljs compile test && node out/test.js",
+    "test": "jest"
+  },
+  "author": "Jack A. Arrington",
+  "devDependencies": {
+    "shadow-cljs": "^2.10.21"
+  },
+}

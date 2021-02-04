@@ -1,0 +1,15 @@
+node_modules/
+.shadow-cljs/
+.calva/
+.clj-kondo/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Temp file I use for piping into long commit messages
+commit.txt
+
+# ClojureScript build directories
+public/js/
+out/

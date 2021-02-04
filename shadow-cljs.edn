@@ -1,0 +1,11 @@
+{:source-paths ["src" "test"]
+ :dependencies [[hashp "0.2.0"]]
+ :dev-http {8080 "public"}
+ :nrepl {:port 3333}
+ :builds
+  {:app {:output-dir "public/js"
+         :asset-path "/js" ;; NOTE: relative to server root
+         :target :browser
+         :modules {:main {:init-fn water.main/main}}
+         :nrepl {:init-ns user}
+         :devtools {:preloads [hashp.core]}}}}
